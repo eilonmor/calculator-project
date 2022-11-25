@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styleconfig.css" rel="stylesheet" />
+</head>
+<body class="centernow">
+    <a href="./index.html"><button>return home</button></a>
+    <div class="box">
+        <form style="display: flex; flex-direction: column; text-align: center; gap: 10px;">
+            <label for="framework"><h4>background color</h4></label>
+            <select id="framework" style="text-align: center;">
+                <option value="1">Default</option>
+                <option value="2">Blue</option>
+                <option value="3">Red</option>
+                <option value="4">Black</option>
+                <option value="5">Yellow</option>
+
+            </select>
+            <button id="btn">Get the Selected color</button>
+            
+            <label for="framework2"><h4>background color</h4></label>
+            <select id="framework2" style="text-align: center;">
+                <option value="1">Default</option>
+                <option value="2">Serif</option>
+                <option value="3">Sans-serif</option>
+                <option value="4">Monospace</option>
+                <option value="5">Cursive</option>
+            </select>
+            <button id="btn2">Get the Selected color</button>
+        </form>
+        <div style="display: flex; flex-direction: row;">
+                <input type="radio" id="Default" name="color mode" value="Default">
+          <label for="Default">Default</label><br>
+          <input type="radio" id="dark" name="color mode" value="Default">
+          <label for="dark">Dark</label>
+        </div>
+        <input id="bt" type="submit" value="Submit">
+        
+        <script>
+            function changeColor(){
+                document.getElementsByClassName('site').style.color = "red"
+
+            }
+            const btn = document.querySelector('#btn');
+            const sb = document.querySelector('#framework')
+            btn.onclick = (event) => {
+                event.preventDefault();
+                // show the selected index
+                changeColor();
+            };
+        </script>
+    </div>
+    
+</body>
+</html>

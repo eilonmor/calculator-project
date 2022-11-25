@@ -1,0 +1,52 @@
+.box{
+	width: 400px;
+	height: 370px;  
+	/* padding: 50px; */
+	/* border: 1px solid red; */
+    background-color: rgb(1, 238, 159);
+	box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.centernow{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+button{
+    background-color: rgb(34, 128, 205); /* Green */
+    border: none;
+    color: white;
+    padding: 8px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+#bt{
+        background-color: rgb(34, 128, 205); /* Green */
+        border: none;
+        color: white;
+        padding: 8px 18px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        display: flex;
+        justify-content: space-around;
+}
+
+h4{
+    color: rgb(34, 128, 205); /* Green */
+
+}

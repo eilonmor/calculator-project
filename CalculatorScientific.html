@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+
+</head>
+<body>
+      <div style="gap:0 ; display: flex; flex-direction: row;  margin-left: 25%;  width: 50%; height: 450px;">  
+        <div class="container">
+            <div id="ibuuton"; class="picture"; ><a href="./helper.html"><img src="img/i buuton.png" alt="i buuton"></a></div>
+            <div id="setting"; class="picture"; onclick="alert('setting')"><a href="./config.html"><img src="./img/setting.png"></a></div>
+            <div id="light"; onclick="turnLight()"><img src="./img/light.png" alt="light"></div>
+            <div id="back" ; class="picture"; onclick="back()"><img src="./img/back.png" alt="back"></div>
+            <div id="historypart" class="picture"; onclick="alert('timer')"><img src="./img/timer.png" alt="timer"></div>
+            <div id="div" class="picture"; onclick="setscreen('/')"><img src="./img/Divide.png" alt="div"></div>
+            <div id="root" class="picture"; onclick="alert('root')"><img src="./img/root.png" alt="root"></div>
+            <div id="7"; class="white" onclick="setscreen('7')">7</div>
+            <div id="8"; class="white" onclick="setscreen('8')">8</div>
+            <div id="9"; class="white" onclick="setscreen('9')">9</div>
+            <div id="multiplication" class="picture"; onclick="setscreen('*')"><img src="./img/multiplication.png" alt="multiplication"></div>
+            <div id="cloud" class="picture"; onclick="alert('cloud')"><img src="./img/cloud.png" alt="cloud"></div>
+            <div id="4"; class="white" onclick="setscreen('4')">4</div>
+            <div id="5"; class="white" onclick="setscreen('5')">5</div>
+            <div id="6"; class="white" onclick="setscreen('6')">6</div>
+            <div id="minuse" class="picture"; onclick="setscreen('-')"><img src="./img/minuse.png" alt="minuse"></div>
+            <div></div>
+            <div id="1"; class="white" onclick="setscreen('1')">1</div>
+            <div id="2"; class="white" onclick="setscreen('2')">2</div>
+            <div id="3"; class="white" onclick="setscreen('3')">3</div>
+            <div id="add" class="picture"; onclick="setscreen('+')"><img  src="./img/add.png" alt="add"></div>
+            <div id="pluse minus" class="picture" onclick="alert('pluse minus')"><img style="height: 80%; width: 40%;" src="./img/plus minus.png" alt=""></div>
+            <div class="white" id="0" onclick="setscreen('0')" >0</div>
+            <div id="dot" onclick="setscreen('.')">.</div>
+   
+            <div class="calculator">My Calculator</div>
+            <div class="screen";  id="res"></div>
+            <div class="c"; id="picture"; onclick="setscreen('c')">C</div>
+            <div class="history" ><p id="historyshow";>history <br /></p></div>
+            <div class="example">example</div>
+            <div class="stam"></div>
+            <div class="equal" id="equal" onclick="setscreen('=')"><img src="./img/equal.png" alt="equal"></div>
+            <div class="must"></div>
+
+        </div>
+    </div>
+    <script src="./js/application.js"></script> 
+    <script src="./js/scientific.js"></script>   
+</body>
+</html>

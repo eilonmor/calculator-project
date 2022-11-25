@@ -1,0 +1,20 @@
+.site{
+    width: 100%;
+    height: 100%;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*grid-gap:10px;*/
+    grid-template-rows: 1fr 2fr 5fr 1fr;
+    grid-template-areas: "header header header"
+                         "sidebar main main"
+                         "sidebar main main"
+                         "footer footer footer"   ;
+}
+mastheader{background:#b46ae3; grid-area:header;}
+.page-title{background:#51a7fa; grid-area:title;}
+.main-content{
+  background:#70bf40; grid-area:main; min-height:500px;
+}
+.sidebar{background:#f49018; grid-area:sidebar;}
+.footer{background:#0265c0; grid-area:footer;}
+

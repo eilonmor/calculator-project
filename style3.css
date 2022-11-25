@@ -1,0 +1,20 @@
+.container {  display: grid;
+    grid-template-columns: 2.5fr 1.5fr 2fr 2fr 2fr 1.5fr 2.5fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . calculator calculator calculator . ."
+      ". . screen screen screen . ."
+      ". . c c c . ."
+      ". . . . . . ."
+      ". . . . . . ."
+      ". . . . . . .";
+  }
+  
+  .calculator { grid-area: calculator; }
+  
+  .screen { grid-area: screen; }
+  
+  .c { grid-area: c; }
+  
